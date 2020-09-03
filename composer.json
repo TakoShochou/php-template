@@ -1,0 +1,29 @@
+{
+    "name": "seagull-sailors/php-template",
+    "version": "0.0.1",
+    "description": "*** DESCRIPTION HERE ***",
+    "type": "project",
+    "license": "proprietary",
+    "readme": "README.md",
+    "authors": [
+        {
+            "name": "SeagullSailor's",
+            "homepage": "https://www.seagullsailors.com/",
+            "role": "Developer"
+        }
+    ],
+    "prefer-stable": true,
+    "bin": ["src/Intrastructure/Console/console.php"],
+    "autoload": {
+        "psr-4": { "SeagullSailors\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "SeagullSailors\\Tests\\": "test/" }
+    },
+    "require": {
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^0.12.34",
+        "phpunit/phpunit": "^9"
+    }
+}
